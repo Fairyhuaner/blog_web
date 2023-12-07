@@ -5,7 +5,7 @@ import pinia from './plugins/pinia'
 import router from './router'
 
 // 基础样式
-import './assets/css/public.scss'
+// import './assets/css/public.scss'
 
 const app = createApp(App)
 
