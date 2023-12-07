@@ -1,0 +1,8 @@
+{
+  "include": [
+    "src/**/*.d.ts",
+    "types/**/*.d.ts",
+    "build/**/*.d.ts",
+    "./auto-imports.d.ts"
+  ]
+}
