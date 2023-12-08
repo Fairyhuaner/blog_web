@@ -16,11 +16,11 @@ export default defineConfig({
       exclude: ['./node_modules']
     }),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'vue-router'],
       resolvers: [ElementPlusResolver()],
       // eslint报错解决
       eslintrc: {
-        enabled: true, // Default `false`
+        enabled: false, // Default `false`
         filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
         globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },

@@ -20,7 +20,8 @@ module.exports = {
     'plugin:vue/vue3-recommended', // 使用插件支持vue3
     'plugin:vue/vue3-essential',
     // 1.继承.prettierrc.js文件规则  2.开启rules的 "prettier/prettier": "error"  3.eslint fix的同时执行prettier格式化
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    './.eslintrc-auto-import.json'
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {

@@ -18,9 +18,6 @@
 // login({ password: '12321', username: '3213' }).then(res => {
 //   console.log('res', res.data.username)
 // })
-// onMounted(() => {
-//   console.log(111)
-// })
 </script>
 
 <style lang="scss" scoped>
