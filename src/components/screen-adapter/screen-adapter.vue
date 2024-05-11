@@ -77,7 +77,7 @@ onBeforeMount(() => {
 .screen-adapter {
   width: 100vw;
   height: 100vh;
-  background-color: #cccccc;
+  background-color: #f6f6f6;
   overflow-x: hidden;
   overflow-y: overlay;
   position: relative;

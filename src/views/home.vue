@@ -14,10 +14,19 @@
 </template>
 
 <script setup lang="ts">
+import { getDepts } from '../api/remote/depts'
 // import { login } from '../api/remote/user'
-// login({ password: '12321', username: '3213' }).then(res => {
+// login({ password: '12321', username: '3213' }).then((res: any) => {
 //   console.log('res', res.data.username)
 // })
+const getList = async () => {
+  await getDepts()
+}
+
+onMounted(() => {
+  getList()
+  console.log('启动成功')
+})
 </script>
 
 <style lang="scss" scoped>
