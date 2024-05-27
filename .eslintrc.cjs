@@ -37,6 +37,15 @@ module.exports = {
     withDefaults: 'readonly'
   },
   rules: {
+    'no-console': 'off',
+    'no-restricted-syntax': [
+      'error',
+      {
+        selector:
+          "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        message: 'Unexpected property on console object was called'
+      }
+    ],
     'prettier/prettier': [
       'error',
       {
@@ -52,11 +61,11 @@ module.exports = {
         bracketSameLine: true // 多属性html标签的‘>’不折行放置
       }
     ],
-    'no-console':
-      process.env.NODE_ENV === 'production'
-        ? ['error', { allow: ['error', 'warn'] }]
-        : 'off', // 生产模式不允许使用log
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 生产默认不允许使用debugger
+    // 'no-console':
+    //   process.env.NODE_ENV === 'production'
+    //     ? ['error', { allow: ['error', 'warn'] }]
+    //     : 'off', // 生产模式不允许使用log
+    // 'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 生产默认不允许使用debugger
     '@typescript-eslint/no-unused-vars': [
       'error',
       { varsIgnorePattern: '.*', args: 'none' }
