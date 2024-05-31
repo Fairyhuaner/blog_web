@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .h1 {
+    @apply text-[48px];
+    line-height: 1.2;
+  }
+
+  .h2 {
+    @apply text-[25px] xl:text-[40px];
+    line-height: 1.2;
+  }
+
+  .h3 {
+    @apply text-base xl:text-base;
+  }
+
+  .pargh {
+    @apply text-[16px];
+  }
+}
